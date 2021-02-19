@@ -10,11 +10,10 @@ a {
   color: inherit;
 }
 header {
-  width: 100vw;
   height: 100px;
   display: flex;
   flex-direction: row;
-  background-color: #000;
+  background-color:  #080B12;
 }
 .upgrade {
   display: flex;
@@ -23,7 +22,7 @@ header {
   width: 100%;
   height: 100%;
   padding: 0 20px;
-  background-color: #080B12;
+
 }
 .upgrade-btn {
   text-transform: uppercase;
@@ -32,26 +31,76 @@ header {
   border: 2px solid #fff;
   padding: 10px;
   margin-right: 20px;
+  cursor: pointer;
+}
+.upgrade-btn a {
+  font-size: 0.85em;
+}
+.upgrade-btn:hover {
+  transform: scale(1.1);
 }
 aside {
+  position: absolute;
+  top: 0;
+  left: 0;
   background-color: #000000;
-  width: 200px;
-  height: 100vh;
   display: flex;
-  padding-top: 30px;
+  padding: 20px;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  z-index: 1;
+  align-items: flex-start;
+  justify-content: flex-start;
+  min-width: 200px;
+  height: calc(100vh - 50px);
 }
 .brand img {
   width: 140px;
 }
+
+.menu {
+  padding: 35px 5px;
+  align-self: flex-start;
+  align-content: center;
+  color: #A3A3A3;
+}
+.menu ul, .playlist ul {
+  margin-left: -20px;
+}
+.menu i {
+  font-size: 25px;
+}
+.menu ul li {
+  list-style: none;
+  padding: 5px 0;
+  padding-left: 20px;
+}
+.menu ul li:hover, .playlist ul li:hover {
+  border-left: 2px solid #ADFF2F;
+  color: #fff;
+}
+.labels {
+  margin-left: 5px;
+}
+.playlist-title {
+  color: #fff;
+  font-weight: bold;
+}
+.playlist ul li {
+  list-style: none;
+  color: #A3A3A3;
+  padding: 10px 0;
+  padding-left: 20px;
+}
+.fa-plus-square {
+  font-size: 40px;
+  vertical-align: middle;
+  padding-right: 5px;
+}
 main {
   background-color: #141922;
   overflow-y: auto;
-  padding-left: 180px;
-  
+  padding-left: 210px;
+  padding-right: 20px;
+  height: calc(100vh - 150px);
 }
 main nav {
   margin-top: 10px;
@@ -63,7 +112,7 @@ main nav {
   font-weight: 700;
 }
 main nav ul {
-  width: 70%;
+  width: 80%;
   display: flex;
   justify-content: space-between;
 }
@@ -71,6 +120,9 @@ main nav ul li {
   list-style: none;
   display: inline-block;
   position: relative;
+}
+main nav ul li:hover {
+  color: #fff;
 }
 main nav ul li:hover .overlay, main nav ul li:focus .overlay, main nav ul li:active .overlay{
   display: inline-block;
@@ -88,27 +140,36 @@ main nav ul li:hover .overlay, main nav ul li:focus .overlay, main nav ul li:act
 
 .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   /* align-items: flex-start; */
   flex-wrap: wrap;
 }
 #recently-played {
-  padding: 50px 0;
+  padding-top: 50px;
 }
 .title {
   padding: 15px 0;
 }
-#recently-played h1 {
+.subtitle {
+  color: #5D6166;
+  padding-top: 3px;
+}
+#recently-played h1, #created-for-user h1, #most-popular h1 {
   color: #fff;
   font-size: 1.5em;
 }
 .card img {
   text-align: center;
   width: 180px;
+  height: 180px;
 }
 .card {
   width: 180px;
   margin: 10px 10px;
+  position: relative;
+}
+.card:hover .card-overlay {
+  display: block;
 }
 .card .song {
   font-weight: bold;
@@ -120,6 +181,31 @@ main nav ul li:hover .overlay, main nav ul li:focus .overlay, main nav ul li:act
   color: #5D6166;
   overflow-x: hidden;
   width: 180px;
+}
+.card-overlay {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  position: absolute;
+  height: 180px;
+  width: 180px;
+  cursor: pointer;
+}
+.card-overlay i {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  position: absolute;
+}
+#most-popular .card img {
+  border-radius: 50%;
+}
+#most-popular .card-overlay {
+  border-radius: 50%;
+}
+#most-popular .card p {
+  text-align: center;
 }
 footer {
   background-color: #282828;

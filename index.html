@@ -5,23 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="./assets/css/master.css">
     <title>Spotify</title>
   </head>
   <body>
     <header>
-      <aside>
-        <div class="brand">
-          <img src="./assets/img/logo.png" alt="Spotify Logo">
-        </div>
-      </aside>
       <div class="upgrade">
         <div class="upgrade-btn">
-          effettua l'upgrade
+          <a href="">effettua l'upgrade</a>
         </div>
       </div>
     </header>
-
+    <aside>
+      <div class="brand">
+        <img src="./assets/img/logo.png" alt="Spotify Logo">
+      </div>
+      <div class="menu">
+        <ul>
+          <li><i class="fas fa-home"></i><span class="labels"><a href="#">Home</a></span></li>
+          <li><i class="fas fa-search"></i><span class="labels"><a href="#">Cerca</a></span></li>
+          <li><i class="fas fa-book"></i><span class="labels"><a href="#">La tua libreria</a></span></li>
+        </ul>
+      </div>
+      <div class="playlist">
+        <div class="playlist-title">PLAYLIST</div>
+        <ul>
+          <li><i class="far fa-plus-square"></i><a href="#">Crea playlist</a></li>
+          <li><a href="#">Sport</a></li>
+          <li><a href="#">Studio</a></li>
+          <li><a href="#">Coding</a></li>
+          <li><a href="#">Showertime</a></li>
+          <li><a href="#">Car trip</a></li>
+          <li><a href="#">Sleep</a></li>
+        </ul>
+      </div>
+    </aside>
     <main>
       <nav>
         <ul>
@@ -39,31 +58,37 @@
         </div>
         <div class="container">
           <div class="card">
+            <div class="card-overlay"><i class="far fa-play-circle"></i></div>
             <img src="./assets/img/animals.png" alt="Animals album">
             <p class="song">Animals</p>
             <p class="artist">Pink Floyd</p>
           </div>
           <div class="card">
+            <div class="card-overlay"><i class="far fa-play-circle"></i></div>
             <img src="./assets/img/bbn.png" alt="Animals album">
             <p class="song">Binaural Beats Meditation</p>
             <p class="artist">Spotify Compilation</p>
           </div>
           <div class="card">
+            <div class="card-overlay"><i class="far fa-play-circle"></i></div>
             <img src="./assets/img/ccr.png" alt="Animals album">
             <p class="song">This is Creedence Clearwater Revival</p>
             <p class="artist">Best of CCR</p>
           </div>
           <div class="card">
+            <div class="card-overlay"><i class="far fa-play-circle"></i></div>
             <img src="./assets/img/pinkf.png" alt="Animals album">
             <p class="song">Dark side of the Moon</p>
             <p class="artist">Pink Floyd</p>
           </div>
           <div class="card">
+            <div class="card-overlay"><i class="far fa-play-circle"></i></div>
             <img src="./assets/img/queen.png" alt="Animals album">
             <p class="song">This is Queen</p>
             <p class="artist">Best of Queen</p>
           </div>
           <div class="card">
+            <div class="card-overlay"><i class="far fa-play-circle"></i></div>
             <img src="./assets/img/ub40.png" alt="Animals album">
             <p class="song">UB40 Best of</p>
             <p class="artist">UB40</p>
@@ -71,8 +96,46 @@
 
         </div>
       </section>
-      <section id="created-for-user"></section>
-      <section id="most-popular"></section>
+      <section id="created-for-user">
+        <div class="title">
+          <h1>Creato per Templarec</h1>
+          <p class="subtitle">Più ascolti, più accurati saranno i suggerimenti.</p>
+        </div>
+        <div class="container">
+          <div class="card">
+            <div class="card-overlay"><i class="far fa-play-circle"></i></div>
+            <img src="./assets/img/animals.png" alt="Animals album">
+            <p class="song">Animals</p>
+            <p class="artist">Pink Floyd</p>
+          </div>
+          <div class="card">
+            <div class="card-overlay"><i class="far fa-play-circle"></i></div>
+            <img src="./assets/img/bbn.png" alt="Animals album">
+            <p class="song">Binaural Beats Meditation</p>
+            <p class="artist">Spotify Compilation</p>
+          </div>
+        </div>
+      </section>
+      <section id="most-popular">
+        <div class="title">
+          <h1>Artisti più popolari</h1>
+          <p class="subtitle">Più ascolti, più accurati saranno i suggerimenti.</p>
+        </div>
+        <div class="container">
+          <div class="card">
+            <div class="card-overlay"><i class="far fa-play-circle"></i></div>
+            <img src="./assets/img/animals.png" alt="Animals album">
+            <p class="song">Animals</p>
+            <p class="artist">Pink Floyd</p>
+          </div>
+          <div class="card">
+            <div class="card-overlay"><i class="far fa-play-circle"></i></div>
+            <img src="./assets/img/bbn.png" alt="Animals album">
+            <p class="song">Binaural Beats Meditation</p>
+            <p class="artist">Spotify Compilation</p>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
 
