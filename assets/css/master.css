@@ -51,6 +51,7 @@ main {
   background-color: #141922;
   overflow-y: auto;
   padding-left: 180px;
+  
 }
 main nav {
   margin-top: 10px;
@@ -87,8 +88,8 @@ main nav ul li:hover .overlay, main nav ul li:focus .overlay, main nav ul li:act
 
 .container {
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  justify-content: space-between;
+  /* align-items: flex-start; */
   flex-wrap: wrap;
 }
 #recently-played {
@@ -99,13 +100,13 @@ main nav ul li:hover .overlay, main nav ul li:focus .overlay, main nav ul li:act
 }
 #recently-played h1 {
   color: #fff;
+  font-size: 1.5em;
 }
 .card img {
   text-align: center;
   width: 180px;
 }
 .card {
-  height: 180px;
   width: 180px;
   margin: 10px 10px;
 }
