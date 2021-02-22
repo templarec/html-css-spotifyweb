@@ -269,11 +269,106 @@ main nav ul li:hover .overlay, main nav ul li:focus .overlay, main nav ul li:act
 footer {
   background-color: #282828;
   height: 75px;
-  position: absolute;
+  color: #fff;
+  /* position: absolute;
   bottom: 0;
   left: 0;
-  z-index: 2;
+  z-index: 2; */
   width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer a:hover {
+  color: #fff;
+}
+.footer-left {
+  color: #5A5A5A;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* width: 20%; */
+  flex-basis: 20%;
+}
+.footer-left img {
+  width: 50px;
+  height: 50px;
+  margin-right: 30px;
+
+}
+.footer-icons {
+  margin-left: 30px;
+}
+.footer-icons i {
+  font-size: 20px;
+}
+.footer-song-title a:first-child {
+  color: #fff;
+  font-weight: bold;
+}
+.footer-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* width: 60%; */
+  flex-basis: 60%;
+}
+.player-bar {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.player-bar > div {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.player-controls ul li, .footer-right ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 0 10px;
+
+}
+.player-controls .fa-play-circle {
+  font-size: 30px;
+  vertical-align: middle;
+}
+.bar {
+  width: 80%;
+  height: 3px;
+  border-radius: 3px;
+  background-color: #5A5A5A;
+}
+.bar-overlay {
+  width: 20%;
+  height: 3px;
+  border-radius: 3px;
+  margin-left: -10px;
+  background-color: #C1C1C1;
+}
+.footer-right {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* width: 20%; */
+  flex-basis: 20%;
+}
+.footer-right ul {
+  width: 100%;
+}
+.volume-bar {
+  display: inline-block;
+  width: 50%;
+  height: 3px;
+  border-radius: 3px;
+  background-color: #5A5A5A;
+  vertical-align: middle;
+  padding-left: 10px;
+}
+[class^="time-"] {
+  font-size: 12px;
 }
 @media all and (min-width: 768px) {
   aside {
