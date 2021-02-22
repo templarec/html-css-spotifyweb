@@ -285,7 +285,7 @@ footer a:hover {
 .footer-left {
   color: #5A5A5A;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   /* width: 20%; */
   flex-basis: 20%;
@@ -340,6 +340,7 @@ footer a:hover {
   height: 3px;
   border-radius: 3px;
   background-color: #5A5A5A;
+  cursor: pointer;
 }
 .bar-overlay {
   width: 20%;
@@ -347,6 +348,23 @@ footer a:hover {
   border-radius: 3px;
   margin-left: -10px;
   background-color: #C1C1C1;
+  position: relative;
+}
+.player-bar:hover .bar-overlay, .volume-bar:hover .bar-overlay {
+  background-color: #ADFF2F;
+}
+.player-bar:hover .scroller, .volume-bar:hover .scroller {
+  display: inline-block;
+}
+.scroller {
+  display: none;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: #C1C1C1;
+  position: absolute;
+  left: 100%;
+  transform: translate(-50%, -30%);
 }
 .footer-right {
   display: flex;
@@ -366,6 +384,7 @@ footer a:hover {
   background-color: #5A5A5A;
   vertical-align: middle;
   padding-left: 10px;
+  cursor: pointer;
 }
 [class^="time-"] {
   font-size: 12px;
