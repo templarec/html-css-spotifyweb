@@ -327,6 +327,9 @@ footer a:hover {
   font-size: 30px;
   vertical-align: middle;
 }
+.player-controls .fa-play-circle:hover {
+  transform: scale(1.1);
+}
 .bar {
   width: 80%;
   height: 4px;
