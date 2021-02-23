@@ -72,7 +72,7 @@ footer {
   color: #fff;
   width: 100vw;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 footer a:hover {
@@ -175,15 +175,18 @@ footer a:hover {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  padding: 0 5px;
 }
 .user i {
-  font-size: 20px;
+  font-size: 25px;
   padding: 15px 0;
   padding-left: 20px;
 }
 .user hr {
   display: none;
   margin-left: 20px;
+  border: 1px solid #5D6166;
+  width: 100%;
 }
 /* sections in main */
 #recently-played, #created-for-user, #most-popular {
@@ -243,13 +246,11 @@ footer a:hover {
 .card .song {
   font-weight: bold;
   color: #fff;
-  overflow-x:  hidden;
-  width: 180px;
+  /* width: 180px; */
 }
 .card .artist {
   color: #5D6166;
-  overflow-x: hidden; /* serve??? */
-  width: 180px;
+  /* width: 180px; */
 }
 /* overlay play button on hover over cards */
 .card-overlay {
@@ -275,15 +276,13 @@ footer a:hover {
 #most-popular .card-overlay {
   border-radius: 50%;
 }
-#most-popular .card p {
-  text-align: center;
-}
 /* footer */
 .footer-left {
   color: #5A5A5A;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-left: 20px;
   flex-basis: 20%;
 }
 .footer-left img {
@@ -365,7 +364,7 @@ footer a:hover {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  /* width: 20%; */
+  padding-right: 20px;
   flex-basis: 20%;
 }
 .volume-bar {
@@ -403,5 +402,5 @@ footer a:hover {
   }
   .user hr {
     display: block;
-    }
+  }
 }
